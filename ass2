@@ -1,0 +1,17 @@
+#include<stdio.h>
+void print10To1(int);
+int main()
+{
+    int n=1;
+    printf("\nNumbers from 10 To 1 are: ");
+    print10To1(n);
+    return 0;
+}
+void print10To1(int n)
+{
+    if(n<=10)
+        print10To1(n+1);
+    else
+        return;
+    printf("\n%d\n", n);
+}
